@@ -1,0 +1,8 @@
+SELECT prime
+FROM table
+WHERE (NUM=2 OR NUM%2!=0) AND
+      (NUM=3 OR NUM%3!=0) AND
+      (NUM=5 OR NUM%5!=0) AND
+      (NUM=7 OR NUM%7!=0) AND
+      (NUM=11 OR NUM%11!=0)
+OPTION (MAXRECURSION 0)
